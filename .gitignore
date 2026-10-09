@@ -1,0 +1,17 @@
+# Godot 4+ specific ignores
+
+# Archivos generados por el sistema
+.godot/
+/android/
+
+# Archivos temporales y del sistema
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+desktop.ini
+
+.vscode/
+.idea/
+
+*.log

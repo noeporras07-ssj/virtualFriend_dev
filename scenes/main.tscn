@@ -1,0 +1,400 @@
+[gd_scene format=3 uid="uid://bg56g8eklgi1l"]
+
+[ext_resource type="Script" uid="uid://cu3twyqk88rtb" path="res://scripts/main.gd" id="1_o5qli"]
+[ext_resource type="Texture2D" uid="uid://56sqmgsp08gv" path="res://assets/sprites/sleep/sleepbella01.png" id="2_85g3d"]
+[ext_resource type="Texture2D" uid="uid://k6i0pqm804k" path="res://assets/sprites/sleep/sleepbella02.png" id="3_choun"]
+[ext_resource type="Texture2D" uid="uid://bcg8cvnl4sc26" path="res://assets/sprites/sleep/sleepbella03.png" id="4_ya4ey"]
+[ext_resource type="Texture2D" uid="uid://0c42hlqfgk0g" path="res://assets/sprites/sleep/sleepbella04.png" id="5_eb6dy"]
+[ext_resource type="Texture2D" uid="uid://c0barid2lkx3u" path="res://assets/sprites/sleep/sleepbella06.png" id="7_a8y0u"]
+[ext_resource type="Texture2D" uid="uid://c4cuifkyxsnm3" path="res://assets/sprites/sleep/sleepbella07.png" id="8_jkv2x"]
+[ext_resource type="Texture2D" uid="uid://dscqkomvuwo7t" path="res://assets/sprites/sleep/sleepbella08.png" id="9_jbj1t"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_5q0nq"]
+load_path = "res://.godot/imported/bella02.png-0607b72c9202d8078e8499b72534e4d8.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_dgi5k"]
+load_path = "res://.godot/imported/bella03.png-a981c55daf559d1910c83067764969d7.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_j8jky"]
+load_path = "res://.godot/imported/bella04.png-46f27ac47346223b73d583dad6715ddc.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_o5qli"]
+load_path = "res://.godot/imported/eatbella01.png-c08ee86e08f3a957e1aafa06ddc7d10b.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0wfyh"]
+load_path = "res://.godot/imported/eatbella02.png-8e8996b40f4a6cffb9acb8ad55f1a966.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_sugp2"]
+load_path = "res://.godot/imported/eatbella03.png-688d82f7d10ea53a9b48b62ee482013f.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jyhfs"]
+load_path = "res://.godot/imported/eatbella04.png-67c29d1ee86f584071d2693feb1b4585.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tbgi4"]
+load_path = "res://.godot/imported/eatbella05.png-5b31d21cb9af21352117527f7907c344.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tefeu"]
+load_path = "res://.godot/imported/eatbella06.png-da79562ab78e1443c4d408ecba28eb3b.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_trceg"]
+load_path = "res://.godot/imported/happybella01.png-d99a403b3db43370643afd7950f0ace3.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_a8y0u"]
+load_path = "res://.godot/imported/happybella02.png-7f708c82c998d8985573ee31ceb59f32.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jkv2x"]
+load_path = "res://.godot/imported/happybella03.png-459aea9843a07219bbacf276e57240f3.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jbj1t"]
+load_path = "res://.godot/imported/happybella04.png-b9ebe68c88e45c62acaee935339d056d.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_muem4"]
+load_path = "res://.godot/imported/happybella05.png-ff5688056a39922b1a2bb09e9ec8abd2.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_dp3eg"]
+load_path = "res://.godot/imported/happybella06.png-5a0b7e2ee14a24ff174310f31c2d97ea.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0ld40"]
+load_path = "res://.godot/imported/happybella07.png-7d3a095ba24d0cb9437acff38a868af3.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_gqmmt"]
+load_path = "res://.godot/imported/happybella08.png-e02ea8069ae785d1f5de7338b5a3c8ef.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_o6xl0"]
+load_path = "res://.godot/imported/hungrybella01.png-d24f362b8a00c5257b339f6f225a6f34.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tipki"]
+load_path = "res://.godot/imported/hungrybella02.png-5b07825996e86d0bfcf46531b75e3500.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_85g3d"]
+load_path = "res://.godot/imported/hungrybella03.png-ea0a430071feb002a80741da9b560ef5.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_choun"]
+load_path = "res://.godot/imported/hungrybella04.png-00017307dc21467a50a93d6db9ee44af.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ya4ey"]
+load_path = "res://.godot/imported/hungrybella05.png-ce0653e6c2592f90785f9150af84425b.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_eb6dy"]
+load_path = "res://.godot/imported/hungrybella06.png-65bc623dbe94f19b3aaef89a63a968ef.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_kmb1v"]
+load_path = "res://.godot/imported/bella01.png-8d9f835f1d2a2a1221301910269b0709.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_fuf3a"]
+load_path = "res://.godot/imported/bellatired01.png-8207642372c737faa99d30a91b02406c.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_pibwh"]
+load_path = "res://.godot/imported/bellatired02.png-8a6685a85a2b8162a477357b50046229.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_c6pm6"]
+load_path = "res://.godot/imported/bellatired03.png-f230a4c978ef556f0239f900398203e7.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_5he1u"]
+load_path = "res://.godot/imported/bellatired04.png-20993dfc20ad57eb8adf9f1059b0f0e2.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_5poiv"]
+load_path = "res://.godot/imported/bellatired05.png-5ba7392c7c1886d4a1950495e329ce6a.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2cjbq"]
+load_path = "res://.godot/imported/bellatired06.png-132cb09fb95a992faf58e68865dc6b5e.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vxglm"]
+load_path = "res://.godot/imported/walkbella01.png-5afe4940cb89097d6fe1bcd835adb0f0.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2f3dj"]
+load_path = "res://.godot/imported/walkbella02.png-52ce38d810358e5d813f3fd07d9b6412.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_yq6so"]
+load_path = "res://.godot/imported/walkbella03.png-a1f7c6e1cd5848a10b7d5c8fdf38bbca.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_fv21b"]
+load_path = "res://.godot/imported/walkbella04.png-5664cb13837d1e21e050917f7d84b209.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tel4y"]
+load_path = "res://.godot/imported/walkbella05.png-49a3c4e176b29abdb288ee9739b5b696.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qkpxi"]
+load_path = "res://.godot/imported/walkbella06.png-c37608e442ca833aa0aa8a175b3ff663.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_yc10j"]
+load_path = "res://.godot/imported/wavebella01.png-9b2b634b65dabbe18d5fe50abd5c8856.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jscy8"]
+load_path = "res://.godot/imported/wavebella02.png-48dd51946f3ede2a71c48de53f0f1677.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_pm3ni"]
+load_path = "res://.godot/imported/wavwbella03.png-eda84050157fe595d93bf4d735ea716e.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_y6deb"]
+load_path = "res://.godot/imported/wavebella04.png-f691a0bbd5520cb1249f3ffa8867f126.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_og1vs"]
+load_path = "res://.godot/imported/wavebella05.png-4804ae2a44e3a39fc98996fff92e7b3e.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2wyq8"]
+load_path = "res://.godot/imported/wavebella06.png-b432c3e40c7f29cf95d66c2e87daa3a3.ctex"
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_eb6dy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_5q0nq")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_dgi5k")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_j8jky")
+}],
+"loop": 0,
+"name": &"blink",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_o5qli")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_0wfyh")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_sugp2")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_jyhfs")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_tbgi4")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_tefeu")
+}],
+"loop": 0,
+"name": &"eat",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_trceg")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_a8y0u")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_jkv2x")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_jbj1t")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_muem4")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_dp3eg")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_0ld40")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_gqmmt")
+}],
+"loop": 0,
+"name": &"happy",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_o6xl0")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_tipki")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_85g3d")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_choun")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_ya4ey")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_eb6dy")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_ya4ey")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_choun")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_85g3d")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_tipki")
+}],
+"loop": 1,
+"name": &"hungry",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_kmb1v")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 1.0
+}, {
+"frames": [],
+"loop": 1,
+"name": &"sad",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_a8y0u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_jkv2x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_jbj1t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_a8y0u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_jkv2x")
+}],
+"loop": 1,
+"name": &"sleep",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_85g3d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_choun")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ya4ey")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_eb6dy")
+}],
+"loop": 0,
+"name": &"sleep_start",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_fuf3a")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_pibwh")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_c6pm6")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_5he1u")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_5poiv")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_2cjbq")
+}],
+"loop": 1,
+"name": &"tired",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_vxglm")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_2f3dj")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_yq6so")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_fv21b")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_tel4y")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_qkpxi")
+}],
+"loop": 1,
+"name": &"walk",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_yc10j")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_jscy8")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_pm3ni")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_y6deb")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_pm3ni")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_y6deb")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_og1vs")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_2wyq8")
+}],
+"loop": 0,
+"name": &"wave",
+"speed": 4.0
+}]
+
+[node name="Main" type="Node2D" unique_id=2052794887]
+script = ExtResource("1_o5qli")
+
+[node name="Mascota" type="AnimatedSprite2D" parent="." unique_id=1143722925]
+position = Vector2(200, 200)
+scale = Vector2(0.25, 0.25)
+sprite_frames = SubResource("SpriteFrames_eb6dy")
+animation = &"sleep"
+
+[node name="BlinkTimer" type="Timer" parent="." unique_id=1289575081]
+one_shot = true
+
+[node name="Dialogo" type="PanelContainer" parent="." unique_id=654082691]
+visible = false
+offset_left = 70.0
+offset_top = 15.0
+offset_right = 330.0
+offset_bottom = 85.0
+
+[node name="Texto" type="Label" parent="Dialogo" unique_id=2063946097]
+layout_mode = 2
+text = "Hola"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DialogTimer" type="Timer" parent="." unique_id=843086413]
+one_shot = true
+
+[node name="ClickTimer" type="Timer" parent="." unique_id=1471924265]
+wait_time = 0.25
+one_shot = true
+
+[node name="NeedsTimer" type="Timer" parent="." unique_id=2066459010]
+autostart = true
