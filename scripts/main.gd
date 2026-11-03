@@ -42,6 +42,7 @@ enum Estado {
 # =========================================================
 
 @export var distancia_arrastre: float = 20.0
+@export var margen_area_interactiva: float = 8.0
 
 
 # =========================================================
@@ -124,6 +125,7 @@ var afecto: float = 50.0
 
 func _ready() -> void:
 	configurar_ventana()
+	configurar_area_interactiva()
 	colocar_ventana()
 	configurar_senales()
 
@@ -152,6 +154,30 @@ func configurar_ventana() -> void:
 	ventana.transparent = true
 	ventana.borderless = true
 	ventana.always_on_top = true
+
+
+func configurar_area_interactiva() -> void:
+	# Fuera de este rectángulo, los clics pasan a la aplicación que está detrás.
+	# El rectángulo incluye a Bella y al diálogo que aparece sobre ella.
+	var sprite_rect := mascota.get_rect()
+	var escala := mascota.global_scale.abs()
+	var sprite_left := mascota.position.x + sprite_rect.position.x * escala.x
+	var sprite_top := mascota.position.y + sprite_rect.position.y * escala.y
+	var sprite_right := sprite_left + sprite_rect.size.x * escala.x
+	var sprite_bottom := sprite_top + sprite_rect.size.y * escala.y
+	var dialog_rect := dialogo.get_global_rect()
+
+	var left := maxf(0.0, minf(sprite_left, dialog_rect.position.x) - margen_area_interactiva)
+	var top := maxf(0.0, minf(sprite_top, dialog_rect.position.y) - margen_area_interactiva)
+	var right := minf(float(get_window().size.x), maxf(sprite_right, dialog_rect.end.x) + margen_area_interactiva)
+	var bottom := minf(float(get_window().size.y), maxf(sprite_bottom, dialog_rect.end.y) + margen_area_interactiva)
+
+	get_window().mouse_passthrough_polygon = PackedVector2Array([
+		Vector2(left, top),
+		Vector2(right, top),
+		Vector2(right, bottom),
+		Vector2(left, bottom),
+	])
 
 
 func colocar_ventana() -> void:
@@ -286,8 +312,19 @@ func iniciar_caminata() -> void:
 	limite_izquierdo = ventana_posicion.x + margen_caminata
 	limite_derecho = ventana_posicion.x + pantalla.size.x - ventana_tamano.x - margen_caminata
 
+	if limite_derecho <= limite_izquierdo:
+		iniciar_descanso()
+		return
+
 	# Posición actual de la ventana
-	var posicion_actual_x: int = get_window().position.x
+	var posicion_actual_x: int = clampi(
+		get_window().position.x,
+		limite_izquierdo,
+		limite_derecho
+	)
+	var posicion_ventana := get_window().position
+	posicion_ventana.x = posicion_actual_x
+	get_window().position = posicion_ventana
 
 	# Elegir un destino aleatorio dentro de una distancia razonable
 	var minimo: int = maxi(
@@ -343,11 +380,11 @@ func mover_hacia_destino(delta: float) -> void:
 		iniciar_descanso()
 		return
 
-	var movimiento: float = velocidad_caminata * delta
+	var movimiento: int = maxi(1, roundi(velocidad_caminata * delta))
 	if diferencia > 0:
-		posicion.x += int(movimiento)
+		posicion.x = mini(posicion.x + movimiento, destino_x)
 	else:
-		position.x += int(movimiento)
+		posicion.x = maxi(posicion.x - movimiento, destino_x)
 
 	get_window().position = posicion
 
@@ -858,19 +895,6 @@ func actualizar_necesidades() -> void:
 		felicidad - perdida_felicidad_por_segundo,
 		0.0,
 		100.0
-	)
-
-
-	# -----------------------------------------------------
-	# DEBUG
-	# -----------------------------------------------------
-
-	print(
-		"Hambre: ", snapped(hambre, 0.1),
-		" | Energía: ", snapped(energia, 0.1),
-		" | Felicidad: ", snapped(felicidad, 0.1),
-		" | Afecto: ", snapped(afecto, 0.1),
-		" | Estado: ", Estado.keys()[estado_actual]
 	)
 
 
